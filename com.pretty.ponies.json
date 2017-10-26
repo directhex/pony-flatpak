@@ -1,0 +1,23 @@
+{
+  "app-id": "com.pretty.ponies",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "1.4",
+  "sdk": "org.freedesktop.Platform",
+  "command": "gnome-dictionary",
+  "finish-args": [
+     "--socket=x11",
+     "--share=network"
+  ],
+  "modules": [
+    {
+      "name": "pony-repo",
+      "sources": [
+        {
+          "type": "git",
+          "url": "git://github.com/directhex/pony-repo.git",
+          "branch": "master"
+        }
+      ]
+    }
+  ]
+}
